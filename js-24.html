@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 101</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <p id="p5"></p>
+            <p id="p6"></p>
+            <p id="p7"></p>
+            <p id="p8"></p>
+            <p id="p9"></p>
+            <p id="p10"></p>
+            <p id="p11"></p>
+            <p id="p12"></p>
+    </body>
+    <script>
+        // Numbers:
+        let length = 16;
+        let weight = 7.5;
+
+        // Strings:
+        let color = "Yellow";
+        let lastName = "Johnson";
+
+        // Booleans:
+        let x = true;
+        let y = false;
+
+        // Objects:
+        const person = {firstName: "John", lastName: "Doe"};
+        const uganda = {currency: "kwanza", capital: "Luanda"};
+
+        // Arrays:
+        const cars = ["Saab", "Volvo", "BMW"];
+        const capital = ["Porto-Novo", "Gaborone", "Ouagadougou", "Gitega", "Yaounde"];
+
+        // Date:
+        const date = new Date(2022-03-25);
+        const birthday = new Date(1985-07-21);
+
+        // Output for Numbers
+        document.getElementById("p1").innerHTML = length;
+        document.getElementById("p2").innerHTML = weight;
+
+        // Output for Strings
+        document.getElementById("p3").innerHTML = color;
+        document.getElementById("p4").innerHTML = lastName;
+
+        // Output for Booleans
+        document.getElementById("p5").innerHTML = x;
+        document.getElementById("p6").innerHTML = y;
+
+        // Output for Objects
+        document.getElementById("p7").innerHTML = "His first name is " + person.firstName + " and last name " + person.lastName;
+        document.getElementById("p8").innerHTML = "Uganda has " + uganda.currency + " as their currency and " + uganda.capital + " as their capital";
+
+        // Output for Arrays
+        document.getElementById("p9").innerHTML = cars;
+        document.getElementById("p10").innerHTML = capital;
+
+        // Output for Arrays
+        document.getElementById("p11").innerHTML = date;
+        document.getElementById("p12").innerHTML = birthday;
+    </script>
+</html>
