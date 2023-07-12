@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 107</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript BigInt</h1>
+            <p>A BigInt can not have decimals.</p>
+            <p id="target"></p>
+            <p>You cannnot perform math between a BigInt type and a Number type.</p>
+    </body>
+    <script>
+        let x = BigInt("123456789012345678901234567890");
+
+        document.getElementById("target").innerHTML = x;
+    </script>
+</html>
