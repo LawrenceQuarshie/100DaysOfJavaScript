@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 116</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+            <p>Call a function which performs a calculation and returns the result:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        
+        let aPlusb = myFunction(3, 4);
+
+        document.getElementById("target").innerHTML = aPlusb;
+    </script>
+</html>
