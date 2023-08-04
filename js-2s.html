@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 121</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+            <p>Function accepts a string of 2 characters and splits that into 2 characters.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        function makeChar(str) {
+            strArray = str.split("");
+            console.log(strArray);
+            a = strArray[0];
+            b = strArray[1];
+            return "The characters in \"" + str + "\" are \"" + a + "\" and \"" + b + "\".";
+        }
+
+        let outPut = makeChar("cd")
+
+        document.getElementById("target").innerHTML = outPut;
+    </script>
+</html>
