@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 123</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+            <p>Outside myFunction() carName is undefined.</p>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        let txt = "Outside: " + typeof carName;
+        document.getElementById("target1").innerHTML = txt;
+
+        function myFunction() {
+            let carName = "Volvo";
+            let txt = "Inside: " + typeof carName + " " + carName;
+            document.getElementById("target2").innerHTML = txt;
+        }
+    </script>
+</html>
