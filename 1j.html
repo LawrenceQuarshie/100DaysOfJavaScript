@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 154</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript String Methods</h1>
+            <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+            <button onclick="changeText()">Try it</button>
+            <p id="target">Please visit Microsoft and Microsoft!</p>
+    </body>
+    <script>
+        function changeText() {
+            let txt = document.getElementById("target").innerHTML;
+
+            document.getElementById('target').innerHTML = txt.replace("Microsoft", "W3Schools");
+        }
+    </script>
+</html>
