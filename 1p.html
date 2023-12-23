@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>JS Tutorials 158</title>
+        <title>JS Tutorials 159</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h1>JavaScript String Methods</h1>
-            <p>Convert string to uppercase:</p>
+            <p>Convert string to lower case:</p>
             <button onclick="lowerToUpperCase()">Try it</button>
             <p id="target">Hello World!</p>
     </body>
     <script>
         function lowerToUpperCase () {
             let txt = document.getElementById("target").innerHTML;
-            txt = txt.toUpperCase();
+            txt = txt.toLowerCase();
             document.getElementById("target").innerHTML = txt;
         }
     </script>
