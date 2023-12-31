@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 162</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Strings</h1>
+        <h2>The padStart() Method</h2>
+            <p>The padStart() method pads a string from the start.</p>
+            <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        let txt = "5";
+        txt = txt.padStart(4, "0")
+        document.getElementById("target").innerHTML = txt;
+    </script>
+</html>
