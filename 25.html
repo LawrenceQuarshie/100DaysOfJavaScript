@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 173</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript String Methods</h1>
+            <p>Display the first array element, after a string split:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        let txt = "a,b,c,d,e,f";
+        let result = txt.split(",")
+        console.log(result);
+        document.getElementById("target").innerHTML = result[0];
+    </script>
+</html>
