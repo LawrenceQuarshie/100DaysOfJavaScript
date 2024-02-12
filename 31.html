@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 203</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Template Strings</h1>
+            <p>Templates allow variables in strings:</p>
+            <p id="target"></p>
+            <p>Templates are not supported in Internet Explorer.</p>
+    </body>
+    <script>
+        let header = "Template Strings";
+        let tags = ["template strings", "javascript", "es6"];
+        let html = `<h2>${header}</h2><ul>`;
+
+        for(const x of tags) {
+            html += `<li>${x}</li>`;
+        }
+        html += `</ul>`;
+
+        document.getElementById("target").innerHTML = html;
+    </script>
+</html>
