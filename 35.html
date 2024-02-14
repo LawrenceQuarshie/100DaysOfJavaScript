@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 205</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Numbers</h1>
+        <h2>Integer Precision</h2>
+            <p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        let x = 999999999999999;
+        let y = 99999999999999999;
+
+        document.getElementById("target").innerHTML = x + "<br>" + y;
+    </script>
+</html>
