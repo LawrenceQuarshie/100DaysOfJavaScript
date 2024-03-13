@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 222</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript BigInt</h1>
+        <h2>Hex, Octa and Binary</h2>
+            <p id="target"></p>
+    </body>
+    <script>
+        let hex = 0x20000000000003n;
+        let oct = 0o400000000000000003n;
+        let bin = 0b100000000000000000000000000000000000000000000000000011n;
+
+        document.getElementById("target").innerHTML = hex + "<br>" + oct + "<br>" + bin;
+    </script>
+</html>
