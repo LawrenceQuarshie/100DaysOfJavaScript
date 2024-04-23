@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 261</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+            <p>Arrays use numbers to access its elements.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        function palindrome(str) {
+            let a = str.split();
+
+            let b = [];
+            for(let i = 0; i <= a.length - 1; i++) {
+                // console.log(i);
+                b[i] = a[a.length - 1 - i];
+            }
+
+            let c = b.toString();
+            
+            console.log(c);
+        }
+
+        palindrome("aba")
+        // document.getElementById("target").innerHTML = person[0];
+    </script>
+</html>
