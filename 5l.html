@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 263</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+            <p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        let fruits = ["Banana", "Orange", "Apple"];
+        let text = "";
+        fruits[6] = "Lemon";
+
+        for(let i = 0; i <= fruits.length - 1; i++) {
+            text += fruits[i] + "<br>";
+        }
+
+        document.getElementById("target").innerHTML = text;
+    </script>
+</html>
