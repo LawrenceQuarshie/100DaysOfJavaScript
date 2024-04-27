@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 265</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+            <p>If you use a named index when accessing an array. JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const person = [];
+        person["firstName"] = "John";
+        person["lastName"] = "Doe";
+        person["age"] = 46;
+        person.length;
+
+        document.getElementById("target").innerHTML = person[0] + " " + person.length;
+    </script>
+</html>
