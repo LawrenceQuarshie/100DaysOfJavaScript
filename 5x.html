@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 273</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>Looping/for statements/Repetitions</h2>
+            <p id="target"></p>
+    </body>
+    <script>
+        let lowerNum = 1500;
+        let highestNum = 2700;
+        let diff = highestNum - lowerNum;
+
+        let a = [];
+        let b = [];
+        for(let i = 0; i <= diff; i++) {
+            a[i] = lowerNum + i;
+            if((a[i] % 7 == 0) && (a[i] % 5 == 0)) {
+                b.push(a[i]);
+            }
+        }
+        document.getElementById('target').innerHTML = b;
+    </script>
+</html>
