@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 276</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <!-- <h2>The join() Method</h2> -->
+            <!-- <p>The join() method joins array elements into a string.</p> -->
+            <!-- <p>In this example we have " * " as a separator between the elements:</p> -->
+            <p id="target"></p>
+    </body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let text = "";
+        
+        fruits.forEach(concatStr);
+
+        function concatStr(element) {
+            text += element + " * ";
+        }
+
+        let finaltext = text.substring(0,text.length - 3)
+        document.getElementById('target').innerHTML = finaltext;
+    </script>
+</html>
