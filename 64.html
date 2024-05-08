@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 278</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        const passive = ["resistors", "capacitors", "inductors", "transformer"];
+
+        document.getElementById("target1").innerHTML = passive;
+
+        passive.pop()
+        document.getElementById("target2").innerHTML = passive;
+    </script>
+</html>
