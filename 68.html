@@ -8,17 +8,17 @@
     </head>
     <body>
         <h1>JavaScript Arrays</h1>
-        <h2>The push() Method</h2>
-            <p>The push() method returns the value that was "popped out":</p>
+        <h2>The pop() Method</h2>
+            <p>The pop() method returns the value that was "popped out":</p>
             <p id="target1"></p>
             <p id="target2"></p>
     </body>
     <script>
-        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        const inputDevices = ["microphones", "phototransistors", "switches", "keyboards"];
 
-        document.getElementById("target1").innerHTML = fruits;
+        document.getElementById("target1").innerHTML = inputDevices;
 
-        fruits.push("Kiwi");
+        inputDevices.push("thermistors")
         document.getElementById("target2").innerHTML = fruits;
     </script>
 </html>
