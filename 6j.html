@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 290</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The length Property</h2>
+            <p>The length property provides an easy way to append new elements to an array without using the push method:</p>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("target1").innerHTML = fruits;
+        
+        fruits[fruits.length] = "Kiwi";
+        document.getElementById("target2").innerHTML = fruits;
+    </script>
+</html>
