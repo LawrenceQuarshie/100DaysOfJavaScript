@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 292</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The concat() Method</h2>
+            <p>Deleting elements leave undefined holes in an array:</p>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+
+        let myChildren = myGirls.concat(myBoys);
+        document.getElementById("target2").innerHTML = myChildren;
+    </script>
+</html>
