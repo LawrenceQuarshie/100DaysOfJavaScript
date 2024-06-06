@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 294</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The concat() Method</h2>
+            <p>The concat() method merges (concatenates) arrays:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const signalClass1 = ["random", "deterministic"];
+        const signalClass2 = ["continuous-time", "discrete-time", "analog", "digital"]
+        const signalClass3 = ["periodic", "aperiodic"];
+        const signalClass4 = ["finite energy", "infinite energy"];
+
+        let signalClass = signalClass1.concat(signalClass1, signalClass2, signalClass3);
+
+        document.getElementById("target").innerHTML = signalClass;
+    </script>
+</html>
