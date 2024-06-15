@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 299</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The flat() Method</h2>
+            <p>The flat() method creates a new array with sub-array elements concatenated to a specified depth.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const myArr = [
+            ['from the ground up!'],
+            ['continuous-time signals', 'continuous-time systems', 'the laplace transform', 'frequency analysis: fourier series', 'frequency analysis: the fourier transform', 'application to control and communication'],
+            ['sampling theory', 'discrete-time signals and systems', 'the z-transform', 'fourier analysis of discrete-time signals and systems', 'introduction to the design of discrete filters', 'applications of discrete-time signals and systems']
+        ];
+        const newArr = myArr.flat();
+        
+        document.getElementById("target").innerHTML = newArr;
+    </script>
+</html>
