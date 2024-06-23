@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 303</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The toSpliced() Method</h2>
+            <p>The splice() methods can be used to remove array elements:</p>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        const letter = ["alpha", "beta", "gamma", "delta", "epsilon"];
+        const spliced = letter.toSpliced(0, 2);
+
+        document.getElementById("target2").innerHTML = spliced;
+    </script>
+</html>
