@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 306</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The slice() Method</h2>
+            <p>Slice out a part of an array starting from array element 2 ("Gamma")</p>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        const letters = ["Alpha", "Beta", "Gamma", "Delta", "Epsilon"];
+        const word = letters.slice(2);
+
+        document.getElementById("target2").innerHTML = letters + "<br><br>" + word;
+    </script>
+</html>
