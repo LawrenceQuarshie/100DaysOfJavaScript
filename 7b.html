@@ -8,13 +8,13 @@
     </head>
     <body>
         <h1>JavaScript Arrays</h1>
-        <h2>The toString() Method</h2>
-            <p>The toString() method returns an array as a comma separated string:</p>
+        <h2>The indexOf() Method</h2>
             <p id="target"></p>
     </body>
     <script>
-        const chp1 = ["Pass", "Transistors", "and", "Transmission", "Gates"];
+        const fruits = ["Apple", "Orange", "Apple", "Mango"];
+        let position = fruits.indexOf('Apple') + 1;
 
-        document.getElementById("target").innerHTML = chp1.toString();
+        document.getElementById("target").innerHTML = "Apple is found in the position " + position;
     </script>
 </html>
