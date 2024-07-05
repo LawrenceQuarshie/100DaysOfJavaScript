@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 313</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The lastIndexOf() Method</h2>
+            <p id="target"></p>
+    </body>
+    <script>
+        const txts = ["built", "integrated", "circuit", "flip-flop", "two", "transistors"];
+        let txt = txts.lastIndexOf('flip-flop') + 1;
+
+        document.getElementById("target").innerHTML = "flip-flop is found in position " + txt;
+    </script>
+</html>
