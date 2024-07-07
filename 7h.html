@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 316</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The find() Method</h2>
+            <p id="target"></p>
+    </body>
+    <script>
+        const numbers = [4, 9, 16, 25, 29];
+        let first = numbers.find(myFunction);
+
+        document.getElementById("target").innerHTML = "First number over 18 is " + first;
+
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</html>
