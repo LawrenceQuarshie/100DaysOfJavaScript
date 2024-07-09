@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 318</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The findLastIndex() Method</h2>
+            <p id="target"></p>
+    </body>
+    <script>
+        const temp = [27, 28, 30, 40, 42, 35, 30];
+
+        let pos = temp.findLastIndex(x => x > 40);
+
+        document.getElementById("target").innerHTML = "The last temperature over 40 was in position " + pos;
+    </script>
+</html>
