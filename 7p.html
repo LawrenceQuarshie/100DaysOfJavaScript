@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 323</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>Sort in Reverse</h2>
+            <p>The reverse() method reverses tne elements in an array.</p>
+            <p>By combining sort() and reverse() you can sort an array in descending order:</p>
+            <p id="target1"></p>
+            <p id="target2"></p>
+    </body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("target1").innerHTML = fruits;
+
+        fruits.sort();
+        fruits.reverse();
+        
+        document.getElementById("target2").innerHTML = fruits;
+    </script>
+</html>
