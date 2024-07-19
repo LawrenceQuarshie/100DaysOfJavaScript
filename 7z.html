@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 332</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The sort() Method</h2>
+            <p>Click the buttons to sort the array alphabetically or numerically.</p>
+            <button onclick="sortAlphabetically()">Sort Alphabetically</button>
+            <button onclick="sortNumerically()">Sort Numerically</button>
+            <p id="target"></p>
+    </body>
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("target").innerHTML = points;
+
+        function sortAlphabetically() {
+            points.sort();
+            document.getElementById("target").innerHTML = points;
+        }
+
+        function sortNumerically() {
+            points.sort(function(a, b) {return a - b});
+            document.getElementById("target").innerHTML = points;
+        }
+    </script>
+</html>
