@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 335</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The sort() Method</h2>
+            <p>Click the button (again and again) to sort the array in random order.</p>
+            <button onclick="randomSort()">Try it</button>
+            <p id="target"></p>
+    </body>
+    <script>
+        const transistor_size = [10, 6, 3, 1.5, 1, 0.8];
+        document.getElementById("target").innerHTML = transistor_size;
+
+        function randomSort() {
+            transistor_size.sort(function() {return 0.5 - Math.random()});
+            document.getElementById("target").innerHTML = transistor_size;
+        }
+    </script>
+</html>
