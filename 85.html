@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 336</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The sort() Method</h2>
+            <p>Click the button (again and again) to sort the array in random order.</p>
+            <p>The lowest number is <span id="target"></span>.</p>
+    </body>
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        points.sort(function(a, b) {return a - b});
+        document.getElementById("target").innerHTML = points[0];
+    </script>
+</html>
