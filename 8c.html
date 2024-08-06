@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 341</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Array Sort</h1>
+            <p>The highest number is <span id="target"></span>.</p>
+    </body>
+    <script>
+        const arrOfDec = [532.6, 4.02, 0.036, 0.04, 0.003, 0.0064];
+
+        document.getElementById("target").innerHTML = myArrayMax(arrOfDec);
+
+        function myArrayMax(arrOfDec) {
+            return Math.max.apply(null, arrOfDec);
+        }
+    </script>
+</html>
