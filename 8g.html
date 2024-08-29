@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 344</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Array Sort</h1>
+            <p>The lowest number is <span id="target"></span>.</p>
+    </body>
+    <script>
+        const wordCount = [3, 7, 11, 2, 3, 12];
+
+        document.getElementById("target").innerHTML = myArrayMax(wordCount);
+
+        function myArrayMax(arr) {
+            let len = arr.length;
+            let max = -Infinity;
+            while(len --) {
+                if(arr[len] > max) {
+                    max = arr[len];
+                }
+            }
+            return max;
+        }
+    </script>
+</html>
