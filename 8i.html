@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 345</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The sort() Method</h2>
+            <p>Sort materials objects on resistivity:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const materials = [
+            {conductor: "Aluminum", resistivity: 2.82},
+            {conductor: "Gold", resistivity: 2.44},
+            {conductor: "Silver", resistivity: 1.59}
+        ];
+
+        displayMaterials();
+
+        materials.sort(function(a, b){return a.resistivity - b.resistivity});
+        displayMaterials();
+
+        function displayMaterials() {
+            document.getElementById("target").innerHTML = 
+            materials[0].conductor + " " + materials[0].resistivity + "<br>" +
+            materials[1].conductor + " " + materials[1].resistivity + "<br>" +
+            materials[2].conductor + " " + materials[2].resistivity;
+        }
+    </script>
+</html>
