@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 346</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The sort() Method</h2>
+            <p>Click the buttons to sort car objects on type.</p>
+            <button onclick="myFunction()">Sort</button>
+            <p id="target"></p>
+    </body>
+    <script>
+        const scanCycle = [
+            {action: "read inputs", order: 1},
+            {action: "execute the program", order: 2},
+            {action: "write outputs", order: 3}
+        ];
+
+        displayScanCycle();
+
+        function myFunction() {
+            scanCycle.sort(function(a, b){
+                let x = a.action.toLocaleLowerCase();
+                let y = b.action.toLocaleLowerCase();
+                if(x < y) {return -1;}
+                if(x > y) {return 1;}
+                return 0;
+            });
+            displayCars();
+        }
+
+        function displayScanCycle() {
+            document.getElementById("target").innerHTML = 
+            scanCycle[0].action + " " + scanCycle[0].order + "<br>" +
+            scanCycle[1].action + " " + scanCycle[1].order + "<br>" +
+            scanCycle[2].action + " " + scanCycle[2].order;
+        }
+    </script>
+</html>
