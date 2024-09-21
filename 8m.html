@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 347</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Stable Sort</h1>
+            <p>From ES2019, browsers must use a stable sorting algorithm.</p>
+            <p>When sorting elements on a key, the elements must keep their relative position to other objects with the same key.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const myArr = [
+            {prefix: "tera", factor: 12},
+            {prefix: "giga", factor: 9},
+            {prefix: "mega", factor: 6},
+            {prefix: "kilo", factor: 3},
+            {prefix: "milli", factor: -3},
+            {prefix: "micro", factor: -6},
+            {prefix: "nano", factor: -9},
+            {prefix: "pico", factor: -12}
+        ];
+
+        myArr.sort((p1, p2) => {
+            if (p1.factor < p2.factor) return -1;
+            if (p1.factor > p2.factor) return 1;
+            return 0;
+        })
+
+        let txt = "";
+        myArr.forEach(myFunction);
+
+        function myFunction(value) {
+            txt += value.prefix + " " + value.factor + "<br>";
+        }
+
+        document.getElementById("target").innerHTML = txt;
+    </script>
+</html>
