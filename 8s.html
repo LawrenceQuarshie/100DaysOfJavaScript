@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 351</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Array Method</h1>
+        <h2>The map() Method</h2>
+            <p>Create a new array by performing a function on each array element:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const numbers1 = [0.4600, 0.4096, 0.3648, 0.3249, 0.2893];
+        const numbers2 = numbers1.map(myFunction);
+
+        document.getElementById("target").innerHTML = numbers2;
+
+        function myFunction(value, index, array) {
+            return value * 2;
+        }
+    </script>
+</html>
