@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 354</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Array Method</h1>
+        <h2>The flatMap() Method</h2>
+            <p>Create a new array by performing a function on each array element:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const power_supply = [0, 0.5, 1, 2, 2.5, 3.5];
+        const newArr = power_supply.flatMap(myFunction);
+
+        document.getElementById("target").innerHTML = newArr;
+
+        function myFunction(x) {
+            return [x, x * 10];
+        }
+    </script>
+</html>
