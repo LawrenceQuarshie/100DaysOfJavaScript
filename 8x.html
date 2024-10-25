@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 355</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Array Method</h1>
+        <h2>The filter() Method</h2>
+            <p>Create a new array from all array elements that passes a test:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+        const over18 = numbers.filter(myFunction);
+
+        document.getElementById("target").innerHTML = over18;
+
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</html>
