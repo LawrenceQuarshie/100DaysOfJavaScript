@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 365</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The every() Method</h2>
+            <p>The every() method checks if all array values pass a test.</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const numbers = [1, 5, 3, 6, 16, 23];
+        let allover18 = numbers.every(myFunction);
+
+        document.getElementById("target").innerHTML = "All over 18 is " + allover18;
+
+        function myFunction(value) {
+            return value > 18;
+        }
+    </script>
+</html>
