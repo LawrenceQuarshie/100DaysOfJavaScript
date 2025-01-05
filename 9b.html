@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 369</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The from() Method</h2>
+            <p>Return an array object from any object with a length property or any iterable object.</p>
+            <p id="target"></p>
+            <p>The Array.from() method is not supported in Internet Explorer.</p>
+    </body>
+    <script>
+        const myTxt = Array.from("LESSONS");
+
+        document.getElementById("target").innerHTML = myTxt;
+    </script>
+</html>
