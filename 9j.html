@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 375</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Operators</h1>
+        <h2>The ... Operator</h2>
+            <p>The "spread" operator spreads elements of iterable objects:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const h1 = ["One", "Two", "Three"];
+        const h2 = ["Four", "Five", "Six"];
+        const h3 = ["Seven", "Eight", "Nine"];
+        const h4 = ["Ten", "Eleven", "Twelve"];
+
+        const hour = [...h1, ...h2, ...h3, ...h4];
+
+        document.getElementById("target").innerHTML = hour;
+    </script>
+</html>
