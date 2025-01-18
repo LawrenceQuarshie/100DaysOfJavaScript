@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 374</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Operators</h1>
+        <h2>The ... Operator</h2>
+            <p>The "spread" operator spreads elements of iterable objects:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Dec"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+
+        document.getElementById("target").innerHTML = year;
+    </script>
+</html>
