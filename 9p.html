@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 379</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>JavaScript const</h2>
+            <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        // Create an Array:
+        const electrical = ["computer engineering", "systems engineering", "power engineering"];
+
+        // Change an element:
+        electrical[0] = "telecommunications";
+
+        // Add an element:
+        electrical.push("signal processing");
+
+        document.getElementById("target").innerHTML = electrical;
+    </script>
+</html>
