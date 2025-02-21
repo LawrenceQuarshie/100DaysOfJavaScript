@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 385</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>Declaring an Array using var</h2>
+            <p id="target"></p>
+    </body>
+    <script>
+        var phones = ["Samsung", "Huawei", "Tecno"];
+        // Here phones[0] is "Samsung"
+        {
+            var phones = ["Infinix", "Huawei", "Tecno"];
+            // Here phones[0] is "Infinix"
+        }
+
+        // Here phones[0] is "Saab"
+        document.getElementById("target").innerHTML = phones[0];
+    </script>
+</html>
