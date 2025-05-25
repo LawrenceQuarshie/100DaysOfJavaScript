@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 446</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Dates</h1>
+        <h2>The getMonth() Method</h2>
+            <p>Return the month of a date as a number from 0 to 1.</p>
+            <p>To get the correct month number, you must add 1:</p>
+            <p id="target"></p>
+    </body>
+    <script>
+        const d = new Date();
+
+        document.getElementById("target").innerHTML = d.getMonth() + 1;
+    </script>
+</html>
