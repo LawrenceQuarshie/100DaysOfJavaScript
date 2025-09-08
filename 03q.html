@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>JS Tutorials 533</title>
+        <title>JS Tutorials 534</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,15 @@
             <p id="target"></p>
     </body>
     <script>
-        const hour = new Date().getHours();
+        let x = "a";
+        let y = "b";
 
-        if (hour < 18) {
-            greetings = "Good day!";
+        if (x < y) {
+            ans = "a comes before b";
         } else {
-            greetings = "Good evening!";
+            ans = "b comes before a";
         }
 
-        document.getElementById("target").innerHTML = greetings;
+        document.getElementById("target").innerHTML = ans;
     </script>
 </html>
