@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 555</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Operators</h1>
+        <h2>The ?? Operator</h2>
+            <p>The ?? operator returns the right operand when the left operand is nullish (null or undefined), otherwise it returns the left operand.</p>
+            <p id="target"></p>
+        <script>
+            let itel = null;
+            let google = 1;
+            let result = itel ?? google;
+            document.getElementById("target").innerHTML = "The only result is " + result;
+        </script>
+    </body>
+</html>
