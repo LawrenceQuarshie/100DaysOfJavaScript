@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 560</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Loops</h1>
+        <h2>The While Loop</h2>
+            <p id="target"></p>
+        <script>
+            let txt = "";
+            var i = 0;
+
+            while(i < 10) {
+                txt += "The number is " + i + "<br>";
+                i++;
+            }
+            
+            document.getElementById("target").innerHTML = txt;
+        </script>
+    </body>
+</html>
