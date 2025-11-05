@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 558</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Scope</h1>
+        <h2>Loop Scope</h2>
+            <p id="target"></p>
+        <script>
+            let i = 5;
+
+            for(i = 0; i < 10; i++) {
+                // some statements
+            }
+            
+            document.getElementById("target").innerHTML = i;
+        </script>
+    </body>
+</html>
