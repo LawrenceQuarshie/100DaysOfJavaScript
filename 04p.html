@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>JS Tutorials 561</title>
+        <title>JS Tutorials 563</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>JavaScript Loops</h1>
-        <h2>The while Loop</h2>
+        <h1>JavaScript break</h1>
+        <h2>The break Statement in a Loop</h2>
+            <p>Break the loop when the loop is 3:</p>
             <p id="target"></p>
         <script>
-            let i = 0;
-            const cars = ["BMW", "Volvo", "Saab", "Ford"];
-            let txt = "";
-
-            while(cars[i]) {
-                txt += cars[i] + "<br>";
-                i++;
+            txt = "";
+            for (let i = 0; i < 10; i++) {
+                if (i == 3) {
+                    break;
+                }
+                txt += "The number is " + i + "<br>";
             }
             document.getElementById("target").innerHTML = txt;
         </script>
