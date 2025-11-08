@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 562</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Loops</h1>
+        <h2>The for Loop</h2>
+            <p id="target"></p>
+        <script>
+            let i = 0;
+            const colors = ["Silver", "Cosmic Orange", "Deep Blue", "Black", "White"];
+            let txt = "";
+
+            while(colors[i]) {
+                txt += colors[i] + "<br>";
+                i++;
+            }
+            document.getElementById("target").innerHTML = txt;
+        </script>
+    </body>
+</html>
