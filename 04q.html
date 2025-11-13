@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 564</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript break</h1>
+        <h2>The break Statement in a Loop</h2>
+            <p>Break the loop when the loop is 6:</p>
+            <p id="target"></p>
+        <script>
+            let txt = "";
+            let shopList = ["BestPrice", "BestPrice", "Franko", "Franko", "Jumia", "Telefonika", "BestPrice", "BestPrice", "Franko", "Franko", "Jiji", "Jumia", "Jumia", "Jumia", "Tonaton", "BestPrice", "BestPrice", "Jumia", "Jumia", "BestPrice"];
+            for (let i = 0; i < 20; i++) {
+                if (i == 6) {
+                    break;
+                }
+                txt += "Visit " + shopList[i] + " for a phone deal.<br>";
+            }
+            document.getElementById("target").innerHTML = txt;
+        </script>
+    </body>
+</html>
