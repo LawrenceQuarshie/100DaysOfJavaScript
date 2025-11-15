@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 566</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript break</h1>
+        <h2>The break Statement in a Switch</h2>
+            <p id="target"></p>
+        <script>
+            let total;
+            switch (6) {
+                case 0:
+                    total = "Apple iPhone 13 Mini";
+                    break;
+                case 1:
+                    total = "Apple iPhone 12 Pro Max";
+                    break;
+                case 2:
+                    total = "Apple iPhone 12 Mini";
+                    break;
+                case 3:
+                    total = "Apple iPhone 12 Pro";
+                    break;
+                case 4:
+                    total = "Apple iPhone 12";
+                    break;
+                case 5:
+                    total = "Apple iPhone SE 2020";
+                    break;
+                case 6:
+                    total = "Apple iPhone 11 Pro Max";
+                    break;
+            }
+            document.getElementById("target").innerHTML = "This is an " + total;
+        </script>
+    </body>
+</html>
