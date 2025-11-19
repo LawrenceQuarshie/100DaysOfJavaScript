@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 569</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript break</h1>
+        <h2>The break out in block</h2>
+            <p id="target"></p>
+        <script>
+            let cars = ["BMW", "Volvo", "Saab", "Ford"];
+            let text = "";
+
+            list : {
+                text += cars[0] + "<br>";
+                text += cars[1] + "<br>";
+                break list;
+                text += cars[2] + "<br>";
+                text += cars[3] + "<br>";
+            }
+            document.getElementById("target").innerHTML = text;
+        </script>
+    </body>
+</html>
