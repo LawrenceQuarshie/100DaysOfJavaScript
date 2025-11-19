@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 569</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript break</h1>
+        <h2>The break out in block</h2>
+            <p id="target"></p>
+        <script>
+            let networkBands = ["GSM", "CDMA", "HSPA", "EVDO", "LTE", "5G"];
+            let text = "";
+
+            list : {
+                text += networkBands[0] + "<br>";
+                text += networkBands[1] + "<br>";
+                text += networkBands[2] + "<br>";
+                break list;
+                text += networkBands[3] + "<br>";
+                text += networkBands[4] + "<br>";
+            }
+            document.getElementById("target").innerHTML = text;
+        </script>
+    </body>
+</html>
