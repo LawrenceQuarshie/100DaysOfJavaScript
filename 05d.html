@@ -1,0 +1,57 @@
+add ease out transition to this
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 578</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+ul {
+    list-style: none; padding-left: 0; margin-top: 0.6rem;
+}
+div {
+    border: 1px solid #aaa; width: fit-content; padding: 1rem; border-radius: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+        <h2>The Arrow Function</h2>
+            <div>
+                <select name="" id="" onchange="sortResults()">
+                    <option value="lowest">Lowest</option>
+                    <option value="highest">Highest</option>
+                </select>
+                <ul>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>cherry</li>
+                </ul>
+            </div>
+        <script>
+            let c = ['apple', 'banana', 'cherry'];
+            let sortResults = () => {
+                let optval = document.querySelector('select').value;
+
+                let y = ``;
+                if(optval == "lowest") {
+                    // console.log(c.sort((a, b) => a - b));
+                    c.sort();
+                    for (let i = 0; i < c.length; i++) {
+                        y += `<li>${c[i]}</li>`
+                    }
+                    console.log(y)
+                } else {
+                    // console.log(c.sort((a, b) => b - a));
+                    c.reverse();
+                    for (let i = 0; i < c.length; i++) {
+                        y += `<li>${c[i]}</li>`
+                    }
+                    console.log(y)
+                }
+                document.querySelector("ul").innerHTML = y;
+            };
+        </script>
+    </body>
+</html>
