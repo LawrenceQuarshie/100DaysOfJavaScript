@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Tutorials 578</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        ul {
+            list-style: none; padding-left: 0; margin-top: 0.6rem; margin-bottom: 0.4rem;
+
+            /* transition */
+            opacity: 1; transition: opacity 0.5s ease-out;
+        }
+
+        /* fade-out class */
+        .fade-out {
+            opacity: 0;
+        }
+
+        div {
+            border: 1px solid #aaa;
+            width: fit-content;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <h2>The Arrow Function</h2>
+
+    <div>
+        <select onchange="sortResults()">
+            <option value="lowest">Lowest</option>
+            <option value="highest">Highest</option>
+        </select>
+
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>cherry</li>
+        </ul>
+    </div>
+
+    <script>
+        let c = ['apple', 'banana', 'cherry'];
+
+        let sortResults = () => {
+            const ul = document.querySelector("ul");
+
+            // fade out
+            ul.classList.add("fade-out");
+
+            setTimeout(() => {
+                let optval = document.querySelector('select').value;
+                let y = ``;
+
+                if (optval === "lowest") {
+                    c.sort();
+                } else {
+                    c.sort().reverse();
+                }
+
+                for (let i = 0; i < c.length; i++) {
+                    y += `<li>${c[i]}</li>`;
+                }
+
+                ul.innerHTML = y;
+
+                // fade in
+                ul.classList.remove("fade-out");
+            }, 300); // matches transition duration
+        };
+    </script>
+</body>
+</html>
