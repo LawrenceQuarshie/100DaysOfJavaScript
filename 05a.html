@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 577</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+.show {
+    opacity: 1; transition: opacity 0.75s ease-in-out;
+}
+p {
+    opacity: 0;
+}
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+        <h2>The Arrow Function</h2>
+            <input type="text" placeholder="Enter a integer">
+            <button onclick="checkEven()">Check</button>
+            <p id="target"></p>
+        <script>
+            let x = document.querySelector("p");
+            let checkEven = () => {
+                let inpval = document.querySelector('input').value;
+                if (inpval % 2 == 1) {
+                    x.innerHTML = `${inpval} is odd`;
+                    x.classList.add("show")
+                } else if (inpval % 2 == 0) {
+                    x.innerHTML = `${inpval} is even`;
+                    x.classList.add("show")
+                } else {
+                    x.innerHTML = `${inpval} is neither even or odd`;
+                    x.classList.add("show")
+                }
+            };
+        </script>
+    </body>
+</html>
