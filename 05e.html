@@ -10,19 +10,19 @@
         <h1>JavaScript Functions</h1>
         <h2>The forEach() Method</h2>
             <p>Call a function for each array element:</p>
-            <ul></ul>
+            <p id="target"></p>
         <script>
-            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            const ramOptions = [6, 8, 12];
 
-            let myfunction = (value) => {
-                text += `<li>${value}</li>`;
+            let myfunction = (ram) => {
+                text += `${ram}GB RAM<br>`;
             }
-
+            
             let text = ``;
-            fruits.forEach(myfunction);
+            ramOptions.forEach(myfunction);
             text += ``;
 
-            document.querySelector("ul").innerHTML = text;
+            document.getElementById("target").innerHTML = text;
         </script>
     </body>
 </html>
