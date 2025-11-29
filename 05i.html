@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 580</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+            <p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+            <button onclick="myfunction()">Try it</button>
+            <p id="target"></p>
+    </body>
+    <script>
+        const plcParts = ["Power Supply", "Chassis", "Mode Key Switch", "I/O Comm. Modules"];
+        document.querySelector("#target").innerHTML = plcParts;
+
+        let myfunction = () => {
+            plcParts[plcParts.length] = "Controllers";
+            document.querySelector("#target").innerHTML = plcParts;
+        }
+    </script>
+</html>
