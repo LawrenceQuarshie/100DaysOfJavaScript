@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorials 581</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+            <p id="target"></p>
+    </body>
+    <script>
+        let x = "";
+
+        const myPLC = {
+            plc: [
+                {name: "Keyence", models: ["KV-40AT", "KV-10AR", "KV-24DT"]},
+                {name: "Siemens", models: ["LOGO!", "S7-1200", "S7-1500"]},
+                {name: "Allen Bradley", models: ["Micro800", "CompactLogix", "ControlLogix"]}
+            ]
+        }
+        for (let i in myPLC.plc) {
+            x += "<h2>" + myPLC.plc[i].name + "</h2>";
+            for (let j in myPLC.plc[i].models) {
+                x += myPLC.plc[i].models[j] + "<br>";
+            }
+        }
+        document.querySelector("#target").innerHTML = x;
+    </script>
+</html>
